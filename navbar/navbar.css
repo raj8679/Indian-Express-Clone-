@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sections_search_logo {
+    width: 100%;
+}
+
+#search_button {
+    position: fixed;
+    border: none;
+    top: 13px;
+    left: 130px;
+    cursor: pointer;
+    height: 28px;
+    width: 31px;
+}
+
+#sections {
+    cursor: pointer;
+    width: 23%;
+    padding: 0px;
+    align-items: center;
+}
+
+/* three line  menu  */
+
+.menu_section {
+    position: fixed;
+    top: 13px;
+    left: 20px;
+    z-index: 10;
+    cursor: pointer;
+    width: 25px;
+    text-align: right;
+    height: 30px;
+    border: none;
+}
+
+.section {
+    visibility: hidden;
+}
+
+
+.top_menu,
+.middle_menu,
+.bottom_menu {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 5px;
+    left: 7px;
+    background-color: black;
+    transition: all 0.6s;
+
+}
+
+.middle_menu {
+    transform: translateY(6px);
+}
+
+.bottom_menu {
+    transform: translateY(12px);
+}
+
+#menu_btn {
+    width: 100px;
+    background-color: none;
+}
+
+/* X menu  */
+.mobile-main-menu {
+    position: fixed;
+
+    transition: transform 0.10s cubic-bezier(0.19, 1, 0.22, 1);
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* height: 300px; */
+    z-index: 4;
+    background-color: rgb(239, 239, 239);
+    margin: auto;
+    text-align: right;
+    transform: translate(100%);
+}
+
+.show_menu {
+    transform: translate(0);
+}
+
+
+
+#menu_options {
+    justify-content: center;
+    margin-top: 5px;
+    justify-content: space-evenly;
+    border-top: 1px solid #c2c2c3;
+    border-bottom: 1px solid #c2c2c3;
+    text-align: left;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobile-main-menu ul {
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mobile-main-menu ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+
+
+
+.open {
+    transform: rotate(90deg);
+    top: 35px;
+    background: none;
+    left: 0;
+    /* cursor: pointer; */
+}
+
+.open .top_menu {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+
+}
+
+.open .middle_menu {
+    display: none;
+}
+
+.open .bottom_menu {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+
+}
+
+#last_sd ul {
+
+    border-left: 0.5px solid #c2c2c3;
+}
+
+/* overlay.show */
+
+.overlay_show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.stop-scrolling {
+    overflow: hidden;
+}
+
+
+
+.menu_iconSD {
+    font-size: 18px;
+    height: 31px;
+    width: 25%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+#navbar_top_sd>div {
+    display: flex;
+    gap: 10px;
+}
+
+#navbar_top_sd {
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+    /* align-items: center; */
+    height: 40px;
+}
+
+#language {
+    font-size: 13px;
+}
+
+#language_section {
+    cursor: pointer;
+    align-items: center;
+}
+
+.top_last {
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+}
+
+#news_letter {
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+    align-items: center;
+    width: 110px;
+    height: 30px;
+    ;
+    border: none;
+}
+
+/* subscribe and login button */
+
+#button_one {
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px 7px 15px;
+    text-transform: uppercase;
+
+    margin-right: 5px;
+    background-color: rgb(255, 185, 0);
+}
+
+#button_two {
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px 7px 15px;
+    margin-right: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(59, 64, 87);
+}
+
+#buttons_section {
+    padding: 10px;
+    border-bottom: 0.01em solid #c2c2c3;
+}
+
+
+/* Last Section */
+
+#option_last_section {
+    border-top: 0.5px solid #c2c2c3;
+    margin-top: 2px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* justify-content: space-evenly; */
+}
+
+.divSD {
+    padding: 2px 7px 2px 7px;
+    /* font-size: 15px; */
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.divSD:hover {
+    color: red;
+}
+
+#trending_div {
+    color: red;
+}
+
+/* menu second phase */
+
+#middle_section_SD {
+    margin-top: 17px;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#middle_section_SD>div {
+    height: 70px;
+    text-align: center;
+    /* border: 1px solid green; */
+}
+
+#date_time {
+    font-size: 12px;
+
+}
+
+#tag_line {
+    margin-top: 0px;
+}
+
+/* 3rd NAVBAR SECTION */
+
+
+#last_navbar_section {
+    margin-top: 2px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    border-top: 1px solid #c2c2c3;
+    border-bottom: 1px solid#c2c2c3;
+}
+
+.last_items ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.last_items li {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.last_items li:hover {
+    color: red;
+}
+
+#last_buttons_section {
+  display: flex;
+  justify-content: center;
+}
+
+#last_one {
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px 7px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 5px;
+    background-color: rgb(255, 185, 0);
+}
+
+#last_two {
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px 7px 15px;
+    margin-right: 60px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(59, 64, 87);
+}
+
+
+/* Last navbar Section */
+
+.last_divSD {
+    padding: 5px 7px 5px 7px;
+    cursor: pointer;
+    color: black;
+    background-color:  #efefef;
+   
+}
+.last_divSD:hover{
+    color: red;
+}
+
+#navbar_last_section{
+    padding: 10px;
+    display: flex;
+    margin-top:2px ;
+    border-top: 1px solid #c2c2c3;
+    font-size: 15px;
+    border-bottom: 1px solid #c2c2c3;
+    justify-content: center;
+    gap: 10px;
+}
+#last_trending{
+    color: red;
+    padding: 5px 7px 5px 7px;
+    font-size: 15px;
+    justify-content: center;
+    background: none;
+}
