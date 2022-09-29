@@ -1,0 +1,16 @@
+#flex_div_rrb{
+    display: flex;
+    padding: 15px;
+}
+img{
+    height:200px;
+    width:300px;
+}
+#appending_news_rrb{
+    width:70%;
+    margin: auto;
+    text-align: justify;
+}
+#flex_div_rrb div{
+    margin: 12px;
+}

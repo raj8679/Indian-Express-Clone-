@@ -1,0 +1,33 @@
+.div_size_rrb{
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+}
+
+#political_div{
+    display: flex;
+    flex-direction: column;
+}
+
+#politicals_div{
+    display: flex;
+    flex-direction: column;
+}
+
+#flex_div_rrb{
+    display: flex;
+    /* flex-direction: row; */
+}
+#flex_div_rrb div{
+    margin: 10px;
+}
+
+img{
+    height:200px;
+    width:300px;
+}
+hr{
+    margin-top: 10px;
+    width: 70%;
+    margin: auto;
+}
