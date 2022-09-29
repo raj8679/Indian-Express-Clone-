@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel="icon" href="..\images\indian-express-logo-n.png">
-        <link rel="stylesheet" href="navbar.css">
-        <title>Latest News,India news,Breaking news,india news</title>
-    </head>
-    <div id="navbar_start">
-        <!-- <div id="overlay"></div>
+const navbar = ()=>{
+    return `
+    <div id="overlay"></div>
         <div id="mobile-menu" class="mobile-main-menu">
             <div id="buttons_section">
                 <button id="button_one">Subscribe</button>
@@ -100,7 +87,7 @@
 
 
                     <button id="search_button"><img id="sections_search_logo"
-                            src="images\search_FILL0_wght300_GRAD0_opsz48.png" alt=""></button>
+                            src="../images/search_FILL0_wght300_GRAD0_opsz48.png" alt=""></button>
                 </div>
                 <div id="language_section">
 
@@ -116,11 +103,11 @@
                 </div>
                 <div id="navbar_top_last">
                     <button id="news_letter"><a href="https://indianexpress.com/newsletters/">Newsletter </a><img
-                            src="images\newsletter.png" alt=""></button>
-                    <img class="top_last" src="images\facebook-icon.png" alt="">
-                    <img class="top_last" src="images\twitter-icon.png" alt="">
-                    <img class="top_last" src="images\youtube-icon.png" alt="">
-                    <img class="top_last" src="images\IE-insta-grey.png" alt="">
+                            src="../images/newsletter.png" alt=""></button>
+                    <img class="top_last" src="../images/facebook-icon.png" alt="">
+                    <img class="top_last" src="../images/twitter-icon.png" alt="">
+                    <img class="top_last" src="../images/youtube-icon.png" alt="">
+                    <img class="top_last" src="../images/IE-insta-grey.png" alt="">
                 </div>
 
 
@@ -131,7 +118,7 @@
                     <span>| TODAY’S PAPER</span>
                 </div>
                 <div>
-                    <img src="images\indian-express-logo-n (1).png" alt="">
+                    <img src="../images/indian-express-logo-n (1).png" alt="">
                     <p id="tag_line">JOURNALISM OF COURAGE</p>
                 </div>
                 <div>
@@ -179,12 +166,8 @@
                 <div class="last_divSD">Cricket</div>
             </div>
 
-        </div> -->
-    </div>
+        </div>
+    `
+}
 
-    <body>
-
-    </body>
-
-</html>
-<script type="module" src="navbar.js"></script>
+export {navbar}

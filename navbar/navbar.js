@@ -1,3 +1,9 @@
+import {navbar} from '../components/navbar.js'
+
+const navbar_div = document.getElementById('navbar_start');
+navbar_div.innerHTML = (navbar())
+
+
 const btn = document.getElementById('menu_btn');
 
 const overlay = document.getElementById('overlay');
