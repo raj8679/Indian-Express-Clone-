@@ -14,10 +14,21 @@ body{
     margin-left: 5px;
     width:auto;
 }
+#appending_news_rrb hr{
+    width: 95%
+    ;
+    border: 1px dotted black;
+}
 #appending_news_rrb img{
     width: 300px;
     height: 200px;
 }
+#appending_new_rrb>div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
 #appending_new_rrb img{
     width: 200px;
     height: 100px;

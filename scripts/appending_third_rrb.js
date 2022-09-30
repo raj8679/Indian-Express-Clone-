@@ -10,6 +10,10 @@ const appendingData4 = (data,container) => {
 
         let box_div_rrb = document.createElement("div");
         box_div_rrb.id = "flex_div_rrb";
+        box_div_rrb.addEventListener("click",function(){
+            localStorage.setItem("news_rrb",JSON.stringify(el));
+            window.location.href = "Onclick_News_append.html";
+        })
         
         let div_rrb = document.createElement("div");
 
@@ -28,10 +32,12 @@ const appendingData4 = (data,container) => {
         let p_new_rrb = document.createElement("p");
         p_new_rrb.innerText = el.publishedAt;
 
+        let hr = document.createElement("hr");
+
         div_rrb.append(img_rrb);
         div_new_rrb.append(h_rrb,p_new_rrb,p_rrb);
         box_div_rrb.append(div_rrb,div_new_rrb);
-        container.append(box_div_rrb);
+        container.append(box_div_rrb,hr);
     });
 };
 

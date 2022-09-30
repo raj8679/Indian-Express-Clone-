@@ -1,0 +1,9 @@
+#container_rrb{
+    width: 90%;
+    height: auto;
+    margin-left: 25px;
+}
+#container_rrb img{
+    width: 70%;
+    height: 60vh;
+}

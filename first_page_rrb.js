@@ -1,5 +1,6 @@
-import { appendingData1 } from "./scripts/appending_rrb.js";
-
+import { navbar } from "./components/navbar.js";
+let navbar_div_rrb =  document.getElementById("navbar_rrb");
+navbar_div_rrb.innerHTML = navbar();
 
 
 const getData = async () => {
@@ -35,6 +36,8 @@ const getData = async () => {
             h.innerText = el.title;
             h.id = "headline_explained_rrb";
 
+            
+
             box.append(img,h);
             data_div.append(box);
         });
@@ -43,3 +46,5 @@ const getData = async () => {
     }
 }
 getData();
+
+

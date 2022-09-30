@@ -2,7 +2,7 @@
     display: flex;
     padding: 15px;
 }
-img{
+#appending_news_rrb img{
     height:200px;
     width:300px;
 }
@@ -13,4 +13,10 @@ img{
 }
 #flex_div_rrb div{
     margin: 12px;
+}
+hr{
+    border: 0.1px dotted black;
+    margin-top: 10px;
+    width: 90%;
+    margin: auto;
 }

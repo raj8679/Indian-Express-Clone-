@@ -10,6 +10,10 @@ const appendingData3 = (data,container) => {
 
         let box_div_rrb = document.createElement("div");
         box_div_rrb.id = "flex_div_rrb";
+        box_div_rrb.addEventListener("click",function(){
+            localStorage.setItem("news_rrb",JSON.stringify(el));
+            window.location.href = "Onclick_News_append.html";
+        });
         
         let div_rrb = document.createElement("div");
 
@@ -22,6 +26,8 @@ const appendingData3 = (data,container) => {
         let h_rrb = document.createElement("p");
         h_rrb.innerText = el.title;
 
+        
+
         div_rrb.append(img_rrb);
         div_new_rrb.append(h_rrb);
         box_div_rrb.append(div_rrb,div_new_rrb);
@@ -30,3 +36,4 @@ const appendingData3 = (data,container) => {
 };
 
 export { appendingData3 };
+

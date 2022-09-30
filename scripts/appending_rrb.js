@@ -19,6 +19,9 @@ const appendingData1 = (data,container) => {
         p_rrb.innerText = el.title;
         p_rrb.id = "headline_explained_rrb";
 
+        
+
+
         div_rrb.append(img_rrb,p_rrb);
         container.append(div_rrb);
     });

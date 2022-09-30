@@ -1,3 +1,9 @@
+import { navbar } from "./components/navbar.js";
+let navbar_div_rrb =  document.getElementById("navbar_rrb");
+navbar_div_rrb.innerHTML = navbar();
+
+
+
 let data_div = document.getElementById("container_rrb");
 data_div.innerHTML = null;
 
