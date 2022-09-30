@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#list_sports {
+    
+    font-weight: bold;
+    margin: auto;
+    color: rgb(163, 32, 32);
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    cursor: pointer;
+    width: 650px;
+    background-color: #f6f6f6;
+    /* border: 1px solid red; */
+}
+
+.sport_name {
+    color: #6a6a6a;
+
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.sport_name:hover {
+    color: rgb(163, 32, 32);
+}
+
+#side_bar {
+    /* border: 1px solid black; */
+    width: 300px;
+}
+#navbar_div{
+    margin-bottom: 10px;
+}
+
+#main_page {
+    margin-top: 5px;
+    margin: auto;
+    width: 75%;
+    display: flex;
+    gap: 20px;
+}
+
+#cata_name {
+    width: 650px;
+    border-bottom: 2px solid #7d7d7d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#show_news {
+    width: 650px;
+    height: 171px;
+    border-bottom: 1px solid #7d7d7d;
+    border-bottom-style : dotted;
+    
+    /* border: 1px solid red; */
+    gap: 15px;
+    margin-top: 15px;
+    display: flex;
+}
+
+#display {
+    width: 650px;
+    height: 171px;
+    /* border: 1px solid red; */
+    gap: 15px;
+    margin-top: 15px;
+    display: grid;
+}
+
+#show_news img {
+    height: 160px;
+    width: 270px;
+}
+
+#titleanddes h2 {
+    /* padding: 0%; */
+    margin: 0%;
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+     font-size: 20px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#titleanddes {
+    width: 450px;
+}
+
+#datetime {
+    padding: 8px;
+    padding-left: 0px;
+    color: #6b6b6b;
+    font-size: 13px;
+}
+
+#description {
+    font-size: 16px;
+    color: #444444;
+}
+
+h4{
+    margin: 0%;
+    padding: 0%;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #7d7d7d;
+    border-bottom-style:dotted ;
+}
+
+#more_sports{
+    background-color: #f6f6f6;
+    gap: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+#para{
+    font-size:13px ;
+}
+#nameSD{
+    color: brown;
+}

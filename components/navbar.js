@@ -87,7 +87,7 @@ const navbar = ()=>{
 
 
                     <button id="search_button"><img id="sections_search_logo"
-                            src="../images/search_FILL0_wght300_GRAD0_opsz48.png" alt=""></button>
+                            src="./images/search_FILL0_wght300_GRAD0_opsz48.png" alt=""></button>
                 </div>
                 <div id="language_section">
 
@@ -103,11 +103,11 @@ const navbar = ()=>{
                 </div>
                 <div id="navbar_top_last">
                     <button id="news_letter"><a href="https://indianexpress.com/newsletters/">Newsletter </a><img
-                            src="../images/newsletter.png" alt=""></button>
-                    <img class="top_last" src="../images/facebook-icon.png" alt="">
-                    <img class="top_last" src="../images/twitter-icon.png" alt="">
-                    <img class="top_last" src="../images/youtube-icon.png" alt="">
-                    <img class="top_last" src="../images/IE-insta-grey.png" alt="">
+                            src="./images/newsletter.png" alt=""></button>
+                    <img class="top_last" src="./images/facebook-icon.png" alt="">
+                    <img class="top_last" src="./images/twitter-icon.png" alt="">
+                    <img class="top_last" src="./images/youtube-icon.png" alt="">
+                    <img class="top_last" src="./images/IE-insta-grey.png" alt="">
                 </div>
 
 
@@ -118,7 +118,7 @@ const navbar = ()=>{
                     <span>| TODAY’S PAPER</span>
                 </div>
                 <div>
-                    <img src="../images/indian-express-logo-n (1).png" alt="">
+                    <img src="./images/indian-express-logo-n (1).png" alt="">
                     <p id="tag_line">JOURNALISM OF COURAGE</p>
                 </div>
                 <div>
