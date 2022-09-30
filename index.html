@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar/navbar.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <style>
+      #container_rj {
+        width: 64%;
+        height: 5700px;
+        margin: auto;
+
+        display: flex;
+      }
+      #big_news_rj {
+        width: 65%;
+        height: 350px;
+
+        border-style: dotted;
+        margin: auto;
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      /* #big_news_rj > div {
+        border: 1px solid rebeccapurple;
+      } */
+      #big_news_rj > div:first-child {
+        width: 46%;
+      }
+      #big_news_rj > div:last-child {
+        width: 54%;
+      }
+      #l_box_rj {
+        width: 65%;
+        border-right-style: dotted;
+      }
+      #r_box_rj {
+        width: 35%;
+        padding-left: 10px;
+      }
+      #top_latest_news_rj {
+        width: 100%;
+
+        display: flex;
+        gap: 20px;
+      }
+      #top_news_rj {
+        width: 48%;
+      }
+      #latest_news_rj {
+        width: 48%;
+        padding-right: 20px;
+      }
+      .opinion_rj,
+      .north_east_rj {
+        border-top-style: dotted;
+      }
+      .opinion_rj img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+      .opinion_rj > div:first-child,
+      .north_east_rj > div:first-child {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .north_east_rj img {
+        width: 110px;
+        height: 75px;
+      }
+      #business_usual_rj {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        color: rgb(128, 27, 27);
+        border: 1px solid black;
+      }
+      #business_usual_rj img {
+        width: 90%;
+      }
+      #lifestyle_rj,
+      #business_rj,
+      #world_rj {
+        width: 95%;
+        border-top-style: dotted;
+      }
+
+      .crousel_rj {
+        width: 95%;
+        height: 300px;
+        padding-top: 10px;
+        background-color: rgb(5, 5, 55);
+      }
+      .crousel_rj > div:first-child {
+        width: 95%;
+        height: 80%;
+        margin: auto;
+
+        display: flex;
+        justify-content: space-between;
+
+        color: white;
+      }
+      .crousel_rj > div:first-child > div {
+        width: 30%;
+        height: 100%;
+      }
+      .crousel_rj img {
+        width: 100%;
+        height: 60%;
+      }
+      .crousel_rj > div:last-child {
+        width: 20%;
+        height: 10px;
+        margin: auto;
+        margin-top: 20px;
+
+        display: flex;
+      }
+      .crousel_rj > div:last-child > div {
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: white;
+      }
+      #city_news_txt_rj {
+        margin-top: 15px;
+        width: 50%;
+        height: 50px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+      }
+      #city_news_txt_rj select {
+        width: 200px;
+        font-size: 16px;
+      }
+      #city_news_rj {
+        margin-top: 15px;
+        width: 95%;
+        height: 300px;
+        border-top-style: dotted;
+        display: flex;
+        gap: 16px;
+      }
+      #city_news_rj > div:first-child {
+        width: 45%;
+      }
+      #city_news_rj > div:last-child {
+        width: 55%;
+      }
+      #city_news_rj p {
+        border-top-style: dotted;
+        line-height: 25px;
+      }
+      #city_news_rj img {
+        margin-top: 15px;
+        width: 100%;
+        height: 70%;
+      }
+      #crousel_2_rj {
+        width: 95%;
+        height: 350px;
+        border: 3px solid black;
+      }
+      #cr_div_1_rj {
+        width: 96%;
+        margin: auto;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom-style: dotted;
+      }
+      #cr_div_1_rj img {
+        width: 40%;
+        height: 90%;
+      }
+      #cr_div_1_rj p {
+        font-size: 12px;
+        background-color: rgb(252, 14, 14);
+        color: white;
+        border-radius: 20px;
+        padding: 3px;
+      }
+      #cr_div_2_rj {
+        width: 96%;
+        margin: auto;
+        margin-top: 10px;
+        height: 240px;
+
+        display: flex;
+        justify-content: space-between;
+      }
+      #cr_div_2_rj img {
+        width: 100%;
+        height: 80%;
+      }
+      #cr_div_2_rj p {
+        position: relative;
+
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        margin-top: -25px;
+        padding: 5px;
+      }
+      #cr_div_2_rj > div {
+        width: 48%;
+      }
+      #cr_div_3_rj {
+        margin: auto;
+        margin-top: 20px;
+
+        height: 20px;
+        width: 30%;
+        display: flex;
+      }
+      #cr_div_3_rj > div {
+        width: 10px;
+        height: 10px;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: white;
+      }
+      #r_box_rj h3 {
+        margin-top: 13px;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      .empty_div_rj {
+        height: 300px;
+        width: 100%;
+      }
+      #only_express_rj {
+        margin-top: 15px;
+        width: 96%;
+        height: 530px;
+        border: 1px solid black;
+      }
+      
+      #only_express_rj > div:first-child {
+        border-bottom-style: dotted;
+        font-weight: bolder;
+      }
+      #only_express_rj > div:last-child{
+        border: 1px solid red;
+        width: 100%;
+        height: 490px;
+        display: flex;
+        gap: 15px;
+      }
+      #ex_l_div_rj,#ex_r_div_rj{
+width: 48%;
+height: 100%;
+border: 1px solid black;
+
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar_rj"></div>
+    <div id="big_news_rj">
+      <div id="big_news_img_rj"></div>
+      <div id="big_news_txt_rj"></div>
+    </div>
+
+    <div id="container_rj">
+      <!--**********************      l_box_rj begins           *****************************-->
+
+      <div id="l_box_rj">
+        <!-- top_latest_news_rj -->
+
+        <div id="top_latest_news_rj">
+          <div id="top_news_rj">
+            <h3>TOP NEWS</h3>
+          </div>
+          <div id="latest_news_rj">
+            <h3>LATEST NEWS</h3>
+          </div>
+        </div>
+
+        <div class="crousel_rj">
+          <div>
+            <div id="crouselimg1_rj"></div>
+            <div id="crouselimg2_rj"></div>
+            <div id="crouselimg3_rj"></div>
+          </div>
+          <div>
+            <div id="dot_1_rj"></div>
+            <div id="dot_2_rj"></div>
+            <div id="dot_3_rj"></div>
+          </div>
+        </div>
+        <!-- city news -->
+        <div id="city_news_txt_rj">
+          <h3>CITY NEWS</h3>
+          <select name="" id="">
+            <option value="">Delhi</option>
+            <option value="">Mumbai</option>
+            <option value="">Kolkata</option>
+          </select>
+        </div>
+        <div id="city_news_rj">
+          <div>
+            <img
+              src="https://images.indianexpress.com/2022/09/NDRS-1.jpg?w=303"
+              alt=""
+            />
+          </div>
+          <div>
+            <p>
+              Delhi HC allows minor to terminate pregnancy after hospitals
+              insist on police complaint
+            </p>
+            <p>
+              41% reduction in acute asthma events due to air purifier use:
+              AIIMS-IIT Delhi study
+            </p>
+            <p>
+              Greater Noida police arrest two history-sheeters following
+              shootout
+            </p>
+            <p>
+              Delhi HC issues guidelines to better the conditions of child care
+              centres
+            </p>
+          </div>
+        </div>
+        <!-- crousel 2 -->
+        <div id="crousel_2_rj">
+          <div id="cr_div_1_rj">
+            <img
+              src="https://indianexpress.com/wp-content/themes/indianexpress/images/logos/explain-widget-logo-new.png"
+              alt=""
+            />
+            <p>READ MORE EXPLAINED</p>
+          </div>
+          <div id="cr_div_2_rj">
+            <div id="cr_img_1_rj"></div>
+            <div id="cr_img_2_rj"></div>
+          </div>
+          <div id="cr_div_3_rj">
+            <div id="dot2_1_rj"></div>
+            <div id="dot2_2_rj"></div>
+            <div id="dot2_3_rj"></div>
+            <div id="dot2_4_rj"></div>
+          </div>
+        </div>
+        <!-- only express div -->
+        <div id="only_express_rj">
+          <div>
+            <h3>ONLY IN THE EXPRESS</h3>
+          </div>
+          <div>
+<div id="ex_l_div_rj"></div>
+<div id="ex_r_div_rj"></div>
+          </div>
+        </div>
+
+
+      </div>
+      <!--**********************      l_box_rj ends           *****************************-->
+
+      <!-- ****************************     r_box_rj begins    **************************-->
+
+      <div id="r_box_rj">
+        <h3>THE EXPRESS VIEW</h3>
+        <!-- opinion div 1 -->
+        <div class="opinion_rj">
+          <div>
+            <p>RBI should let the market decide the fate of the rupee</p>
+            <img
+              src="https://images.indianexpress.com/2022/09/edit-36-25.jpg?w=210"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>OPINION</h4>
+          </div>
+        </div>
+        <!-- opinion div 2 -->
+        <div class="opinion_rj">
+          <div>
+            <p>
+              What the Rajasthan political crisis highlights: Congress
+              effectively has no high command
+            </p>
+            <img
+              src="https://images.indianexpress.com/2015/03/neeraja.jpg?w=210"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Neerja Choudhary</h4>
+          </div>
+        </div>
+        <!-- opinion div 3 -->
+        <div class="opinion_rj">
+          <div>
+            <p>
+              Can we use the learnings from the past 75 years to achieve our
+              constitutional values by 2047?
+            </p>
+            <img
+              src="https://images.indianexpress.com/2014/06/urvashi.jpg?w=210"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Urvashi Butalia</h4>
+          </div>
+        </div>
+        <!-- opinion div 4 -->
+        <div class="opinion_rj">
+          <div>
+            <p>What is the solution to India’s garbage disposal problem?</p>
+            <img
+              src="https://images.indianexpress.com/2017/08/milind-sohoni.jpg?w=210"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Milind Sohoni</h4>
+          </div>
+        </div>
+        <!-- opinion div 5 -->
+        <div class="opinion_rj">
+          <div>
+            <p>
+              Power imbalance: The governance shift in the power sector needs
+              centre-state cooperation
+            </p>
+            <img
+              src="https://images.indianexpress.com/2021/08/Somit.jpg?w=210"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Somit Das Gupta</h4>
+          </div>
+        </div>
+        <!-- opinion div 6 -->
+        <div class="opinion_rj">
+          <div>
+            <p>
+              Muslim intellectuals meeting Mohan Bhagwat is an act of
+              appeasement that helps RSS agenda
+            </p>
+            <img
+              src="https://images.indianexpress.com/2013/12/untitled-14.jpg?w=210"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Abdul Khaliq</h4>
+          </div>
+        </div>
+        <!-- opinion div 7 -->
+        <div class="opinion_rj">
+          <div>
+            <p>
+              Russia’s nuclear threat may force Europe to build a nuclear
+              arsenal
+            </p>
+            <img
+              src="https://images.indianexpress.com/2013/12/c-raja-mohan21.jpg?w=210"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>C Raja Mohan</h4>
+          </div>
+        </div>
+
+        <div id="business_usual_rj">
+          <h2>BUSINESS AS USUAL</h2>
+          <img
+            src="https://images.indianexpress.com/2014/02/700-cartoon-164.jpg"
+            alt=""
+          />
+        </div>
+
+        <h3>LIFESTYLE</h3>
+        <div id="lifestyle_rj"></div>
+        <h3>WORLD</h3>
+        <div id="world_rj"></div>
+        <h3>BUSINESS</h3>
+        <div id="business_rj"></div>
+        <div class="empty_div_rj"></div>
+        <h3>NORTH EAST INDIA</h3>
+        <!-- north east div 1 -->
+        <div class="north_east_rj">
+          <div>
+            <p>
+              Over 400 rape cases in Tripura since January 2020; 1,174 held for
+              crimes against women: CM
+            </p>
+            <img
+              src="https://images.indianexpress.com/2022/09/MANIK-SAHA-1-1-2.jpg?resize=450%2C250&w=210&quality=70"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- north east div 2-->
+        <div class="north_east_rj">
+          <div>
+            <p>
+              Tripura likely to deploy over 2,500 police for Durga Puja this
+              year
+            </p>
+            <img
+              src="https://images.indianexpress.com/2022/09/Tripura-police-1.jpg?resize=450%2C250&w=210&quality=70"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- north east div 3 -->
+        <div class="north_east_rj">
+          <div>
+            <p>
+              Manipur closes colleges after violent protests over deferred union
+              elections
+            </p>
+            <img
+              src="https://images.indianexpress.com/2022/09/manipur.jpg?resize=450%2C250&w=210&quality=70"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="empty_div_rj"></div>
+        <!-- parenting div -->
+        <h3>PARENTING</h3>
+        <div class="north_east_rj">
+          <div>
+            <p>
+              ‘I know this is a process’ says Hilaria Baldwin as she opens up
+              about ‘Mama Guilt’ after welcoming seventh baby
+            </p>
+            <img
+              src="https://images.indianexpress.com/2022/09/Alec-Baldwin-and-Hilaria-Baldwin-ap-1200by667.jpeg?resize=450%2C250&w=210&quality=70"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- science div -->
+        <h3>SCIENCE</h3>
+        <div class="north_east_rj">
+          <div>
+            <p>
+              Gender and the brain: Why neuroscience is still searching for
+              evidence
+            </p>
+            <img
+              src="https://images.indianexpress.com/2022/09/Brain-gender-20220929.jpg?resize=450%2C250&w=210&quality=70"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- HOROSCOPE div -->
+        <h3>HOROSCOPE</h3>
+        <div class="north_east_rj">
+          <div>
+            <p>
+              Horoscope Today, 30 September 2022: Check astrological prediction
+              for Scorpio, Sagittarius, Cancer, Aries and other signs
+            </p>
+            <img
+              src="https://images.indianexpress.com/2022/09/hororscope5-9-4.jpeg?resize=450%2C250&w=210&quality=70"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- express research div -->
+        <h3>EXPRESS RESEARCH</h3>
+        <div class="north_east_rj">
+          <div>
+            <p>
+              The Kohinoor, Cullinan and the enduring demand for reparations
+              across the colonial world
+            </p>
+            <img
+              src="https://images.indianexpress.com/2022/09/db00b76a-ba09-40b5-abb3-186642357d33.jpeg?resize=450%2C250&w=210&quality=70"
+              alt=""
+            />
+          </div>
+        </div>
+        <!--  BOOKS div -->
+        <h3>BOOKS</h3>
+        <div class="north_east_rj">
+          <div>
+            <p>
+              The longlist for the Kamaladevi Chattopadhyay NIF Book Prize 2022
+              has been announced
+            </p>
+            <img
+              src="https://images.indianexpress.com/2022/09/Kamladevi_Twitter.jpg?resize=450%2C250&w=210&quality=70"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="north_east_rj">
+          <div>
+            <p>
+              ‘If one wants to write a book on mythology, there’s no better
+              country than India and no better area than dharma’
+            </p>
+            <img
+              src="https://images.indianexpress.com/2022/09/Amish_HarperCollins1200.jpg?resize=450%2C250&w=210&quality=70"
+              alt=""
+            />
+          </div>
+        </div>
+        <!--  AUDIO div -->
+        <h3>BOOKS</h3>
+        <div class="north_east_rj">
+          <div>
+            <p>Everything you need to know about the ban on PFI</p>
+            <img
+              src="https://images.indianexpress.com/2022/09/Feature-25.png?w=210"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="north_east_rj">
+          <div>
+            <p>
+              You probably don’t know about this Alia Bhatt film (and that’s a
+              good thing)
+            </p>
+            <img
+              src="https://images.indianexpress.com/2022/09/3-Things-Feature-2.jpg?w=210"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="north_east_rj">
+          <div>
+            <p>Democratizing content creation through Youtube Shorts</p>
+            <img
+              src="https://images.indianexpress.com/2022/09/3-Things-Feature-30.jpg?w=210"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- *******closing r_box_div ********-->
+      </div>
+      <!-- ****************************      r_box_rj ends       **************************-->
+    </div>
+    <div id="footer_rj"></div>
+  </body>
+</html>
+<script type="module">
+  //impoting
+  // import {navbar} from "./components/navbar.js"
+  //   console.log(navbar)
+  //   let navbar_rj=document.getElementById("navbar_rj");
+  //   navbar_rj.innerHTML=navbar();
+
+  //   import {footer} from "./components/footer.js"
+  //   let footer_div=document.getElementById("footer_rj");
+  //   footer_div.innerHTML=footer();
+
+  //   //top news*****
+
+  //   async function fetch_topnews() {
+  //     let res = await fetch(
+  //       `https://newsapi.org/v2/top-headlines?country=in&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=12`
+  //     );
+  //     let data = await res.json();
+
+  //     let actual_data = data.articles;
+  //     console.log(actual_data);
+  //     let big_news_img_rj = document.getElementById("big_news_img_rj");
+  //     let big_news_txt_rj = document.getElementById("big_news_txt_rj");
+  //     let img = document.createElement("img");
+  //     img.src = actual_data[0].urlToImage;
+  //     img.style.width = "100%";
+  //     img.style.height = "100%";
+  //     let h1 = document.createElement("h1");
+  //     h1.innerText = actual_data[0].title;
+  //     let p = document.createElement("p");
+  //     p.style.fontSize = "25px";
+  //     p.innerHTML = actual_data[0].description;
+  //     big_news_img_rj.append(img);
+  //     big_news_txt_rj.append(h1, p);
+
+  //     append_topnews(actual_data);
+  //   }
+
+  //   function append_topnews(data) {
+  //     let top_news_rj = document.getElementById("top_news_rj");
+  //     data.forEach(function (el) {
+  //       let div = document.createElement("div");
+
+  //       div.style.borderTopStyle = "dotted";
+  //       div.style.width = "100%";
+  //       div.style.height = "130px";
+  //       div.style.display = "flex";
+  //       div.style.gap = "6px";
+  //       div.style.alignItems = "center";
+  //       let p = document.createElement("p");
+  //       p.innerText = el.title;
+  //       let img = document.createElement("img");
+  //       img.src = el.urlToImage;
+  //       img.style.width = "90px";
+  //       img.style.height = "70px";
+  //       div.append(p, img);
+
+  //       div.addEventListener("click",function(){
+  //         detailed_func(el);
+  //       })
+  //       top_news_rj.append(div);
+  //     });
+  //   }
+
+  //   fetch_topnews();
+
+  //   //latest news(science)******
+
+  //   async function fetch_latestnews() {
+  //     let res = await fetch(
+  //       `https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=17`
+  //     );
+  //     let data = await res.json();
+
+  //     let actual_data = data.articles;
+  //     console.log(actual_data);
+  //     append_latestnews(actual_data);
+  //   }
+
+  //   function append_latestnews(data) {
+  //     let latest_news_rj = document.getElementById("latest_news_rj");
+  //     data.forEach(function (el) {
+  //       let div = document.createElement("div");
+  //       div.style.backgroundColor = "rgba(128, 128, 128, 0.086)";
+  //       div.style.borderTopStyle = "dotted";
+  //       div.style.width = "100%";
+  //       div.style.height = "90px";
+  //       div.style.display = "flex";
+  //       div.style.gap = "6px";
+  //       div.style.alignItems = "center";
+  //       let p = document.createElement("p");
+  //       p.innerText = el.title;
+  //       div.append(p);
+  //       latest_news_rj.append(div);
+  //     });
+  //   }
+  //    fetch_latestnews();
+
+  //   // lifestyle append*************
+  //   async function fetch_lifestyle() {
+  //     let res = await fetch(
+  //       `https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=5`
+  //     );
+  //     let data = await res.json();
+
+  //     let actual_data = data.articles;
+  //     console.log(actual_data);
+  //     append_lifestyle(actual_data);
+  //   }
+
+  //   function append_lifestyle(data) {
+  //     let lifestyle_rj = document.getElementById("lifestyle_rj");
+  //     data.forEach(function (el) {
+  //       let div = document.createElement("div");
+
+  //       div.style.borderTopStyle = "dotted";
+  //       div.style.width = "100%";
+  //       div.style.height = "130px";
+  //       div.style.display = "flex";
+  //       div.style.gap = "6px";
+  //       div.style.alignItems = "center";
+  //       let p = document.createElement("p");
+  //       p.innerText = el.title;
+  //       let img = document.createElement("img");
+  //       img.src = el.urlToImage;
+  //       img.style.width = "90px";
+  //       img.style.height = "70px";
+  //       div.append(p, img);
+  //       lifestyle_rj.append(div);
+  //     });
+  //   }
+  //    fetch_lifestyle();
+
+  //   //LS news data
+
+  //   // navbar section functionality
+
+  // const btn = document.getElementById('menu_btn');
+
+  // const overlay = document.getElementById('overlay');
+
+  // const menu = document.getElementById('mobile-menu');
+  // const section = document.getElementById('section_hidden');
+
+  // btn.addEventListener('click',navToggle)
+
+  // function navToggle(){
+  //     btn.classList.toggle('open');
+
+  //     overlay.classList.toggle('overlay_show');
+  //     document.body.classList.toggle('stop-scrolling')
+  //     menu.classList.toggle('show_menu');
+  //     section.classList.toggle('section')
+
+  // }
+
+  // // day3
+  // //crousel_rj
+
+  // function crousel_display(){
+  //   let count=0;
+  //   let counter=0;
+  //   let img_list=[
+  //     "https://images.indianexpress.com/2022/09/Opinion-1-14.jpg?resize=450%2C250&w=204",
+  //     "https://images.indianexpress.com/2022/09/vijay-rupani-2.jpg?resize=450%2C250&w=204",
+  //     "https://images.indianexpress.com/2022/06/UPSC-KEY-Pic-With-Logo.jpg?resize=450%2C253&w=204",
+  //     "https://images.indianexpress.com/2022/09/Opinion-1-16.jpg?resize=450%2C250&w=204",
+  //     "https://images.indianexpress.com/2022/09/Nitish-with-Apna-Dal-K-leader-Krishna-Patel.-@adkamerawadi.jpg?resize=450%2C250&w=204",
+  //     "https://images.indianexpress.com/2022/09/E-global-I.jpg?resize=450%2C250&w=204",
+  //     "https://images.indianexpress.com/2022/09/ashok-gehlot-2-1.jpg?resize=450%2C250&w=204",
+  //     "https://images.indianexpress.com/2022/09/UPSC-KEY-Pic-With-Logo-5.png?resize=450%2C253&w=204",
+  //     "https://images.indianexpress.com/2022/09/cows-2.jpg?resize=450%2C250&w=204"
+  // ];
+  // let p_list=[
+  //   "M Mehta writes:Diaspora reflecting divison of India.",
+  //   "vijay Rupani Interview:CM candidate is decided by the high command.",
+  //   "UPSC key:What to read and why for UPSC CSE.",
+  //   "C Rajmohan writes:Russia's nuclear threat may force europe to",
+  //   "Kurmi club: one national path, Nitish looks at Sonelal Patel Legacy.",
+  //   "Why India has lashed out at USA over its F-16 pacakage to Pakistan.",
+  //   "Gehlot's power play made congress leadership cut sorry figure.",
+  //   "UPSC key:What to read and why for UPSC",
+  //   "Gujarat: Cattles on roads, in courts as shelter let them loose"
+  // ]
+  // let crousel_img_1=document.getElementById("crouselimg1_rj");
+  // let crousel_img_2=document.getElementById("crouselimg2_rj");
+  // let crousel_img_3=document.getElementById("crouselimg3_rj");
+  // let dot1=document.getElementById("dot_1_rj");
+  // let dot2=document.getElementById("dot_2_rj");
+  // let dot3=document.getElementById("dot_3_rj");
+  // setInterval(() => {
+  //   crousel_img_1.innerHTML=null;
+  //   crousel_img_2.innerHTML=null;
+  //   crousel_img_3.innerHTML=null;
+  //   if(count==img_list.length){
+  //     count=0;
+  //   }
+  //   let img1=document.createElement("img");
+  //   img1.src=img_list[count];
+  //   let p=document.createElement("p");
+  //   p.innerText=p_list[count];
+  //   count++;
+
+  //   let img2=document.createElement("img");
+  //   img2.src=img_list[count];
+  //   let p2=document.createElement("p");
+  //   p2.innerText=p_list[count];
+  //   count++;
+  //   let img3=document.createElement("img");
+  //   img3.src=img_list[count];
+  //   let p3=document.createElement("p");
+  //   p3.innerText=p_list[count];
+  //   count++;
+
+  //   crousel_img_1.append(img1,p)
+  //   crousel_img_2.append(img2,p2)
+  //   crousel_img_3.append(img3,p3)
+
+  // if(counter===0){
+  //   dot2.style.backgroundColor="white";
+  //   dot3.style.backgroundColor="white";
+  //   dot1.style.backgroundColor="tomato";
+  //   counter++;
+  // }
+  // else if(counter==1){
+  //   dot1.style.backgroundColor="white";
+  //   dot3.style.backgroundColor="white";
+  //   dot2.style.backgroundColor="tomato";
+  //   counter++;
+  // }
+  // else if(counter==2){
+  //   dot1.style.backgroundColor="white";
+  //   dot2.style.backgroundColor="white";
+  //   dot3.style.backgroundColor="tomato";
+  //   counter++;
+  // }
+  // if(counter==3){
+  //   counter=0;
+  // }
+
+  // }, 2500);
+  // }
+
+  // crousel_display()
+
+  // //world news**
+
+  // async function fetch_worldnews() {
+  //     let res = await fetch(
+  //       `https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=5`
+  //     );
+  //     let data = await res.json();
+
+  //     let actual_data = data.articles;
+  //     console.log(actual_data);
+  //     append_worldnews(actual_data);
+  //   }
+
+  //   function append_worldnews(data) {
+  //     let world_rj = document.getElementById("world_rj");
+  //     data.forEach(function (el) {
+  //       let div = document.createElement("div");
+
+  //       div.style.borderTopStyle = "dotted";
+  //       div.style.width = "100%";
+  //       div.style.height = "130px";
+  //       div.style.display = "flex";
+  //       div.style.gap = "6px";
+  //       div.style.alignItems = "center";
+  //       let p = document.createElement("p");
+  //       p.innerText = el.title;
+  //       let img = document.createElement("img");
+  //       img.src = el.urlToImage;
+  //       img.style.width = "90px";
+  //       img.style.height = "70px";
+  //       div.append(p, img);
+  //       world_rj.append(div);
+  //     });
+  //   }
+  //   fetch_worldnews()
+
+  //   //business news**
+  //   async function fetch_businessnews() {
+  //     let res = await fetch(
+  //       `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=5`
+  //     );
+  //     let data = await res.json();
+
+  //     let actual_data = data.articles;
+  //     console.log(actual_data);
+  //     append_businessnews(actual_data);
+  //   }
+
+  //   function append_businessnews(data) {
+  //     let business_rj = document.getElementById("business_rj");
+  //     data.forEach(function (el) {
+  //       let div = document.createElement("div");
+
+  //       div.style.borderTopStyle = "dotted";
+  //       div.style.width = "100%";
+  //       div.style.height = "130px";
+  //       div.style.display = "flex";
+  //       div.style.gap = "6px";
+  //       div.style.alignItems = "center";
+  //       let p = document.createElement("p");
+  //       p.innerText = el.title;
+  //       let img = document.createElement("img");
+  //       img.src = el.urlToImage;
+  //       img.style.width = "90px";
+  //       img.style.height = "70px";
+  //       div.append(p, img);
+  //       business_rj.append(div);
+  //     });
+  //   }
+  //   fetch_businessnews()
+
+  //  //crousel 2***
+  //  function crousel_2(){
+  //   let count=0;
+  //   let counter=0;
+  //   let img_list=[
+  //     "https://images.indianexpress.com/2022/09/rss-1200.jpg",
+  //     "https://images.indianexpress.com/2022/09/Nuclear-threat.jpg",
+  //     "https://images.indianexpress.com/2022/09/PFI_1_1200_PTI-1-1.jpg",
+  //     "https://images.indianexpress.com/2022/09/PFI-explained-2.jpg",
+  //     "https://images.indianexpress.com/2022/09/uk-flag-7591.jpg",
+  //     "https://images.indianexpress.com/2022/09/Magnus-and-Niemann-1.jpeg",
+  //     "https://images.indianexpress.com/2022/09/dart.jpg",
+  //     "https://images.indianexpress.com/2022/09/Kaziranga-opening-and-jeep-safari-5.jpg",
+
+  // ];
+  // let p_list=[
+  //   "Short history of the bans imposed on RSS since 1947",
+  //   "With Putin’s nuclear threat, what are Russia’s ‘strategic’ and ‘tactical’ nuclear weapons?",
+  //   "Appealing the PFI ban: How UAPA tribunal works",
+  //   "What ‘ban’ on Popular Front of India means",
+  //   "The mess in the UK economy, and why the govt is being blamed for it",
+  //   "Is it easy to cheat at chess? Apparently yes. Here’s how",
+  //   "Why NASA has deliberately crashed a spacecraft into an asteroid",
+  //   "Was it illegal for Himanta and Sadhguru to enter Kaziranga at night? Strictly speaking, no",
+  // ]
+  // let crousel_img_1=document.getElementById("cr_img_1_rj");
+  // let crousel_img_2=document.getElementById("cr_img_2_rj");
+  // let dot1=document.getElementById("dot2_1_rj");
+  // let dot2=document.getElementById("dot2_2_rj");
+  // let dot3=document.getElementById("dot2_3_rj");
+  // let dot4=document.getElementById("dot2_4_rj");
+  // setInterval(() => {
+  //   crousel_img_1.innerHTML=null;
+  //   crousel_img_2.innerHTML=null;
+  //   if(count==img_list.length){
+  //     count=0;
+  //   }
+  //   let img1=document.createElement("img");
+  //   img1.src=img_list[count];
+  //   let p=document.createElement("p");
+  //   p.innerText=p_list[count];
+  //   count++;
+
+  //   let img2=document.createElement("img");
+  //   img2.src=img_list[count];
+  //   let p2=document.createElement("p");
+  //   p2.innerText=p_list[count];
+  //   count++;
+
+  //   crousel_img_1.append(img1,p)
+  //   crousel_img_2.append(img2,p2)
+
+  // if(counter===0){
+  //   dot2.style.backgroundColor="white";
+  //   dot3.style.backgroundColor="white";
+  //   dot4.style.backgroundColor="white";
+  //   dot1.style.backgroundColor="tomato";
+  //   counter++;
+  // }
+  // else if(counter==1){
+  //   dot1.style.backgroundColor="white";
+  //   dot3.style.backgroundColor="white";
+  //   dot4.style.backgroundColor="white";
+  //   dot2.style.backgroundColor="tomato";
+  //   counter++;
+  // }
+  // else if(counter==2){
+  //   dot1.style.backgroundColor="white";
+  //   dot2.style.backgroundColor="white";
+  //   dot4.style.backgroundColor="white";
+  //   dot3.style.backgroundColor="tomato";
+  //   counter++;
+  // }
+  // else if(counter==3){
+  //   dot1.style.backgroundColor="white";
+  //   dot2.style.backgroundColor="white";
+  //   dot3.style.backgroundColor="white";
+  //   dot4.style.backgroundColor="tomato";
+  //   counter++;
+  // }
+  // if(counter==4){
+  //   counter=0;
+  // }
+
+  // }, 2500);
+  //  }
+
+  //  crousel_2();
+</script>
