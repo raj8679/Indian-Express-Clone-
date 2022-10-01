@@ -1,30 +1,30 @@
+
+const explainer = async()=>{
+let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_11708b81b08dbf38764b8de0ebefe23602366&q=Explainer`)
+let data = await res.json()
+let actual_data = data.results;
+
+appendhealth_news(actual_data)
+// console.log(data.results)
+}
+
+explainer()
+
+
 import {navbar} from "./components/navbar.js"
 
 let navbar_div = document.getElementById('navbar_div');
 navbar_div.innerHTML = navbar();
 
-import {footer} from "./components/footer.js" 
-
-let footer_div = document.getElementById('footer_div');
-footer_div.innerHTML = footer();
 
 
-const sports = async()=>{
-   let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=a61bc8057ef74dee86ef794e7ea34ab6`)
-   let data = await res.json()
-   let actual_data = data.articles
-   appendnews(actual_data)
-   console.log(actual_data)
-}
 
-sports()
-
-const appendnews = (data) =>{
+const appendhealth_news = (data) =>{
     let news_div = document.getElementById('display');
     news_div.innerHTML = null
     // console.log(data.articles)
 
-    data.forEach(({urlToImage,title,publishedAt,description})=>{
+    data.forEach(({pubDate,description,image_url,title})=>{
        
         let div1 = document.createElement('div');
         let div3 = document.createElement('div');
@@ -32,7 +32,7 @@ const appendnews = (data) =>{
 
         let image = document.createElement('img')
 
-        image.src = urlToImage
+        image.src = image_url
 
         let div2 = document.createElement('div');
         div2.id = 'titleanddes'
@@ -42,7 +42,7 @@ const appendnews = (data) =>{
           
         let p1 = document.createElement('p');
         p1.id = 'datetime'
-        p1.innerHTML  = publishedAt ;
+        p1.innerHTML  =pubDate;
 
 
         let p2 = document.createElement('p');
@@ -84,10 +84,9 @@ function navToggle(){
 }
 
 
-const health_special = document.getElementById('health_id');
+const health_special = document.getElementById('cricket');
 health_special.addEventListener("click",health_page)
 
 function health_page (){
-window.location.href="health.html"
+window.location.href="index.html"
 }
-

@@ -7,7 +7,7 @@ body {
 }
 
 #list_sports {
-    
+
     font-weight: bold;
     margin: auto;
     color: rgb(163, 32, 32);
@@ -34,7 +34,8 @@ body {
     /* border: 1px solid black; */
     width: 300px;
 }
-#navbar_div{
+
+#navbar_div {
     margin-bottom: 10px;
 }
 
@@ -58,8 +59,8 @@ body {
     width: 650px;
     height: 171px;
     border-bottom: 1px solid #7d7d7d;
-    border-bottom-style : dotted;
-    
+    border-bottom-style: dotted;
+
     /* border: 1px solid red; */
     gap: 15px;
     margin-top: 15px;
@@ -68,7 +69,7 @@ body {
 
 #display {
     width: 650px;
-    height: 171px;
+    /* height: 171px; */
     /* border: 1px solid red; */
     gap: 15px;
     margin-top: 15px;
@@ -87,7 +88,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-     font-size: 20px;
+    font-size: 20px;
 }
 
 p {
@@ -107,27 +108,38 @@ p {
 }
 
 #description {
+    /* overflow: hidden;
+    white-space: nowrap;
+    width: 350px;
+    height: 75px; */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
     font-size: 16px;
     color: #444444;
 }
 
-h4{
+h4 {
     margin: 0%;
     padding: 0%;
     padding-bottom: 3px;
     border-bottom: 1px solid #7d7d7d;
-    border-bottom-style:dotted ;
+    border-bottom-style: dotted;
 }
 
-#more_sports{
+#more_sports {
     background-color: #f6f6f6;
     gap: 10px;
     margin-top: 10px;
     display: flex;
 }
-#para{
-    font-size:13px ;
+
+#para {
+    font-size: 13px;
 }
-#nameSD{
+
+#nameSD {
     color: brown;
 }

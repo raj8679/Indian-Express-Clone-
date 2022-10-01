@@ -160,10 +160,10 @@ const navbar = ()=>{
                 <div class="last_divSD">Crossword & sudoku</div>
                 <div class="last_divSD">UPSC Key</div>
                 <div class="last_divSD">Everyday Explainer</div>
-                <div class="last_divSD">Health Specials</div>
+                <div  id="health_id" class="last_divSD" >Health Specials</div>
                 <div class="last_divSD">Academic Counselling</div>
                 <div class="last_divSD">Follow Authors</div>
-                <div class="last_divSD">Cricket</div>
+                <div id="cricket" class="last_divSD">Cricket</div>
             </div>
 
         </div>
