@@ -1,0 +1,42 @@
+
+#container_rrb{
+    margin: auto;
+    width: 70%;
+    display: grid;
+    gap: 15px 25px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto,400px);
+    text-align: left;
+}
+#container_div_rrb{
+    width: 100%;
+}
+
+#headline_explained_rrb{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    word-spacing: 0px;
+}
+
+#image_explained_rrb{
+    width: 100%;
+    height: 250px;
+}
+
+#explainer_top_rrb{
+    width: 72%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#explainer_top_rrb img{
+    width: 100%;
+    height: 400px;
+}
+hr{
+    margin-top: 10px;
+    width: 60%;
+    margin: auto;
+}

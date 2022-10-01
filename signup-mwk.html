@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<link rel="stylesheet" href="index-mwk.css">
+<body>
+    <div class="login">
+        <form name='form-login'>
+    
+            <h1>REGISTER</h1>
+    
+            <label for="name">Email</label>
+            <input type="email" id="name" placeholder="Username" required>
+    
+            <label for="pw">Password</label>
+            <input type="password"
+                   id= "pw"
+                   placeholder="Password" required>
+    
+            <ul class="helper-text">
+                <li class="length">Must be at least 8 characters long.</li>
+                <li class="lowercase">Must contain a lowercase letter.</li>
+                <li class="uppercase">Must contain an uppercase letter.</li>
+                <li class="special">Must contain a number or special character.</li>
+            </ul>
+            <input id="rgstr_btn" type="submit" value="Register" onclick="store()">
+            <div class="link"><a href="login-mwk.html">Go to login page</a></div>
+    
+        </form>
+    </div>
+    
+    
+</body>
+</html>
+<script src="signup-mwk.js"></script>

@@ -1,0 +1,364 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar/navbar.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="icon" href=".\images\indian-express-logo-n.png">
+</head>
+<style>
+    #puzzle{
+        width: 100%;
+        border: 1px solid red;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        gap:10px;
+    }
+    #puzzle>div:nth-child(2){
+        scroll-behavior: smooth;
+    }
+    #puzzle>div>img{
+        width: 100%;
+    }
+#top{
+    width:92%;
+    margin:auto;
+    border:1px solid rgb(231, 229, 229);  
+    background-color:  rgb(243, 242, 242);  
+    height: 253px;
+}
+#top>div{
+    width: 76%;
+    margin:auto;
+    margin-top: 20px; 
+       margin-bottom: 20px;
+    border:1px solid rgb(248, 245, 245);   
+    padding: 20px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+   background-color: rgb(251, 252, 253);
+   height:170;
+}
+#open{
+    width: 76%;
+    margin: auto;
+     color: grey;
+     display: flex;
+     margin-top: 20px;
+     justify-content: space-between;
+}
+#open>div:nth-child(2){
+  width:40%;
+  height: 28px;
+text-align: center;
+background-color:blue;
+color: white;
+padding-top: 2px;
+
+}
+hr{
+    color: rgb(153, 151, 151);
+    width:84%;
+    margin-top: -1px;;
+}
+#impress{
+    margin: auto;
+    width:92%;
+    display: grid;
+    margin-top: 35px;
+    grid-template-columns: repeat(2,auto);
+    gap:20px;
+    padding:30px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+span{
+    text-decoration: underline;
+}
+h3{
+    margin: auto;
+    width:82%;
+    
+}
+#contact{
+    display: flex;
+    gap:20px;
+    
+}
+
+#contact>div>p{
+color:rgb(17, 129, 160)
+}
+#contact>div>p:hover{
+    color:rgb(183, 6, 6)
+}
+#contact>div{
+    display: flex;
+
+}
+#game{
+    width:92%;
+    margin:auto;
+    display:grid;
+   border-radius: 7px;
+    padding:  20px 20px 30px 20px;
+    margin-top: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#game>div{
+    
+    margin: auto;
+    width:90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;                
+}
+#game>div:nth-child(1){
+    display: flex;
+gap:10px;
+}
+#game>div>div{
+    display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 7px;
+
+}
+#game>div>div>img{
+width:100%;
+border-radius: 7px;
+}
+#game>div>div:nth-child(1){
+    background-color:rgb(249, 232, 232);
+
+}
+#game>div>div:nth-child(2){
+    background-color:rgb(234, 248, 234);
+}
+button{
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    border: 0px;
+    margin-bottom: -5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+button:hover{
+   color: white; 
+   background-color:black;
+}
+#crossword{
+    width:92%;
+    margin:auto;
+    display:grid;
+   border-radius: 7px;
+    padding: 20px 20px 30px 20px;
+    margin-top: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#crossword>div:nth-child(1){
+    display: flex;
+    gap:15px
+}
+#crossword>div{
+    margin: auto;
+    width:90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+border-radius: 7px;
+}
+#crossword>div>div{
+    display: grid;
+    justify-items: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color:rgb(249, 232, 232);
+  border-radius: 7px;     
+}
+#crossword>div>div>img{
+    width:100%;  
+    border-radius: 7px;  
+}
+#rd{
+    color: red;
+
+}
+#crossword>div>div>p{
+margin-top: -20px;
+}
+#crossword>div>div>button{
+    margin-top: 5px;
+
+}
+#crossword>div>div:nth-child(4){
+ background-color:white;
+}
+#Sudoku{
+    width:92%;
+    margin:auto;
+    display:grid;
+   border-radius: 7px;
+    padding: 20px 20px 30px 20px;
+    margin-top: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#Sudoku>div{
+    margin: auto;
+    width:90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+border-radius: 7px;
+}
+#Sudoku>div:nth-child(1){
+    display: flex;
+    gap:15px  
+}
+#Sudoku>div>div{
+    display: grid;
+    justify-items: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color:rgb(234, 248, 234);
+  border-radius: 7px;     
+}
+#Sudoku>div>div>img{
+    width:100%;
+    border-radius: 7px; 
+}
+</style>
+<body>
+    <div id="navbar_div"></div>
+    <div id="puzzle">
+<div>
+    <img src="https://tpc.googlesyndication.com/simgad/786124683015229389" alt="">
+    <img src="https://tpc.googlesyndication.com/simgad/786124683015229389" alt="">
+</div>
+
+    <div>
+   <div id="top">
+    <div>
+        <h1 id="head">Pipedream.com</h1>
+<p>Pipedream is a low code intergration platform for devs that
+    that allow you to connect APIs fast.</p>
+    <div id="open">
+       <div>Pipedream</div>
+        <div>open</div>
+    </div>
+</div>
+   </div> 
+   <hr id="hr">
+<h3>Home/Puzzles & Games</h3>
+
+<div id="impress">
+    <div>
+    <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/game_logo.png"alt="error">
+</div>
+<div >
+<p>
+    Enjoy daily crosswords and sudoku from The Indian Express. Have you explored <span>India's puzzle culture </span>yet?
+ </p><div id="contact">
+ <div>
+ <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/email-icon.svg"alt=""/>
+    
+      <p>Puzzles@indianexpress.com</p></div>
+   <div>
+ <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/instagram-icon.svg"alt=""/>
+  <p> @iepuzzles</p>
+</div>
+</div>
+</div>
+</div>
+<div  id="game">
+    <div>
+    <h1>Today's Games</h1><h1 id="rd">></h1></div>
+    <hr>
+    <div>
+        <div >
+            <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/crossword.jpg"alt="error">
+<h2>Today's Crossword</h2>
+<button>PLAY NOW -></button>
+        </div>
+        <div>
+            <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/sudoku.jpg" alt="">
+        <h2>Today's Sudoku</h2>
+        <button>PLAY NOW -></button>
+
+        </div>
+    </div>
+</div>
+<div id="crossword">
+   <div> <h1>Crosswords </h1><h1 id="rd">></h1></div>
+    <hr>
+    <div>
+    <div>
+        <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/crossword.jpg"alt="">
+        <h2>Thursday</h2>
+        <p>Thu, Sep 29, 2022</p>
+        <button>PLAY NOW</button>
+    </div>
+    <div>
+        <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/crossword.jpg"alt="">
+        <h2>Wednesday</h2>
+        <p>Web, Sep 28, 2022</p>
+        <button>PLAY NOW -></button>
+    </div>
+    <div>
+        <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/crossword.jpg"alt="">
+        <h2>Tuesday</h2>
+        <p>Tue, Sep 27, 2022</p>
+        <button>PLAY NOW -></button>
+    </div>
+    <div>
+     <P>SEE MORE<br> CROSSWORDS</P>
+    </div>
+    </div>
+</div>
+<div id="Sudoku">
+    <div>
+    <h1>Sudoku <h1 id="rd">></h1>
+</div>
+
+<hr>
+<div>
+<div>
+    <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/sudoku.jpg" alt="">
+<h2>Easy</h2>
+<button>PLAY NOW -></button>
+</div>
+<div>
+    <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/sudoku.jpg" alt="">
+<h2>Medium</h2>
+<button>PLAY NOW -></button>
+</div>
+<div>
+    <img src="https://indianexpress.com/wp-content/plugins/ie-crossword-sudoku/assets/src/images/ie/sudoku.jpg" alt="">
+<h2>Hard</h2>
+<button>PLAY NOW -></button>
+</div>
+</div>
+</div>
+</div>
+<div>
+    <img src="https://tpc.googlesyndication.com/simgad/786124683015229389" alt="">
+    <img src="https://tpc.googlesyndication.com/simgad/786124683015229389" alt="">
+</div>
+</div>
+<div id="footer_rj"></div>
+</body>
+</html>
+<script type="module">
+    import {navbar} from "./components/navbar.js"
+
+let navbar_div = document.getElementById('navbar_div');
+navbar_div.innerHTML = navbar();
+
+import {footer} from "./components/footer.js"
+    let footer_div=document.getElementById("footer_rj");
+    footer_div.innerHTML=footer();
+
+    
+</script>
