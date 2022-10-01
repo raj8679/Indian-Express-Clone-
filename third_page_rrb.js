@@ -4,7 +4,7 @@ import { appendingData3 } from "./scripts/appending_second_cols_rrb.js";
 
 import { navbar } from "./components/navbar.js";
 let navbar_div_rrb =  document.getElementById("navbar_rrb");
-navbar_div_rrb.innerHTML = navbar();
+navbar_div_rrb.innerHTML = navbar();~
 
 const getIndiaNews = async () => {
     let data_div = document.getElementById("appending_news_rrb");

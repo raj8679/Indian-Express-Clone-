@@ -4,6 +4,10 @@ import { navbar } from "./components/navbar.js";
 let navbar_div_rrb =  document.getElementById("navbar_rrb");
 navbar_div_rrb.innerHTML = navbar();
 
+import { footer } from "./footer/footer.js";
+let footer_div_rrb =  document.getElementById("footer_rrb");
+footer_div_rrb.innerHTML = footer();
+
 const getIndiaNews = async () => {
     let data_div = document.getElementById("appending_news_rrb");
     try{
