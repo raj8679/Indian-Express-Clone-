@@ -30,3 +30,11 @@ p.innerText = storedData.content;
     
 box.append(h,des,img,p);
 data_div.append(box);
+
+const homePage_logo = document.getElementById('homePage_logo');
+homePage_logo.addEventListener("click",homepage)
+homePage_logo.style.cursor="pointer";
+
+function homepage (){
+window.location.href="index.html"
+}

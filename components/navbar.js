@@ -118,7 +118,7 @@ const navbar = ()=>{
                     <span>| TODAY’S PAPER</span>
                 </div>
                 <div>
-                    <img src="./images/indian-express-logo-n (1).png" alt="">
+                    <img  id="homePage_logo" src="./images/indian-express-logo-n (1).png" alt="">
                     <p id="tag_line">JOURNALISM OF COURAGE</p>
                 </div>
                 <div>

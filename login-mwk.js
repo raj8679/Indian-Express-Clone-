@@ -9,6 +9,7 @@ function check(){
 
     if(userName.value == storedName && userPw.value == storedPw){
         alert('You are logged in.');
+        window.location.href="index.html"
     }else{
         alert('Error on login');
     }
