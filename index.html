@@ -821,7 +821,8 @@ width: 48%;
 
     async function fetch_topnews() {
       let res = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=12`
+        `https://newsapi.org/v2/top-headlines?country=in&apiKey=1fcaf420d38f427dade012480ca67b84
+&pageSize=12`
       );
       let data = await res.json();
 
@@ -876,7 +877,8 @@ width: 48%;
 
     async function fetch_latestnews() {
       let res = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=17`
+        `https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=1fcaf420d38f427dade012480ca67b84
+&pageSize=17`
       );
       let data = await res.json();
 
@@ -907,7 +909,8 @@ width: 48%;
     // lifestyle append*************
     async function fetch_lifestyle() {
       let res = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=5`
+        `https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=1fcaf420d38f427dade012480ca67b84
+&pageSize=5`
       );
       let data = await res.json();
 
@@ -1055,7 +1058,8 @@ width: 48%;
 
   async function fetch_worldnews() {
       let res = await fetch(
-        `https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=5`
+        `https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=1fcaf420d38f427dade012480ca67b84
+&pageSize=5`
       );
       let data = await res.json();
 
@@ -1090,7 +1094,8 @@ width: 48%;
     //business news**
     async function fetch_businessnews() {
       let res = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=5`
+        `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=1fcaf420d38f427dade012480ca67b84
+&pageSize=5`
       );
       let data = await res.json();
 
@@ -1215,7 +1220,8 @@ width: 48%;
 
 async function fetch_onlyexpress(){
  
-  let res = await fetch(`https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=8`);
+  let res = await fetch(`https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=1fcaf420d38f427dade012480ca67b84
+&pageSize=8`);
     let data = await res.json();
 
     let actual_data = data.articles;
@@ -1301,7 +1307,8 @@ fetch_onlyexpress()
 
 async function fetch_entertainment(){
  
- let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=8`);
+ let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=1fcaf420d38f427dade012480ca67b84
+&pageSize=8`);
    let data = await res.json();
 
    let actual_data = data.articles;
@@ -1478,7 +1485,8 @@ function crousel_3(){
   //sports***
   async function fetch_sports(){
  
- let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=2ecb00ae528540d5a7003e447c66275b&pageSize=8`);
+ let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=1fcaf420d38f427dade012480ca67b84
+&pageSize=8`);
    let data = await res.json();
 
    let actual_data = data.articles;
